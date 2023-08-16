@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "protospace#index"
+  root to: "prototypes#index"
   
   
 end
