@@ -32,6 +32,7 @@
       </div>
       <div class="prototype__comments">
         <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
+         <% if user_signed_in? %>
           <%= form_with model: [@prototype, @comment]  ,local: true do |f|%>
            <div class="field">
 
@@ -41,6 +42,7 @@
             <div class="actions">
                <%= f.submit "送信する", class: :form__btn  %>
             </div>
+          <% end %>
           <% end %>
         <%# // ログインしているユーザーには上記を表示する %>
         <ul class="comments_lists">
