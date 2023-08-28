@@ -44,7 +44,7 @@ class PrototypesController < ApplicationController
       render :edit, status: :unprocessable_entity
     end
     # 空の入力欄がある場合は、編集できずにそのページに留まること
-    # 正しく編集できた場合は、詳細ページへ遷移すること
+    # 正しく編集できた場合は、詳細ページへ遷移する
   end
 
 
